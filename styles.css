@@ -3,7 +3,7 @@
     --text-color: #1a1c20;
     --link-color: #ffffff;
     --background-color: #eeeff1;
-    font-size: 17px; /* Set the base font size */
+    font-size: 25px; /* Set the base font size */
 }
 
 * {
@@ -168,13 +168,17 @@ section h2::after {
 
 /* Experience Section */
 #experience-section {
+    width: 100%;
+    margin: auto;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 2rem;
+    padding: 4rem 2rem; /* Add some padding for spacing */
 }
+
 
 #experience-section h2 {
     margin-bottom: 1rem;
@@ -182,22 +186,35 @@ section h2::after {
     font-weight: 700;
 }
 
-#experience-section .experience-container {
+/* ✅ New styles to enable side-by-side layout */
+.experience-scroll-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    max-width: 56.25rem;
+    justify-content: center; /* Center the child items horizontally */
+    gap: 1.5rem;
+    padding: 1rem;
     width: 100%;
+    max-width: 1600px;
+    overflow-x: auto;
+    margin: 0 auto;
 }
 
-#experience-section .experience-box {
+.experience-box {
     background-color: #bfd6c4;
     padding: 2rem;
     border-radius: 0.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text inside the box */
+    flex: 0 0 20rem; /* Fixed width for side-by-side layout */
+    margin: 0 auto; /* Center the experience box in its container */
+    overflow: hidden; /* Ensures that any overflowing content is hidden */
+}
+
+.experience-box img {
     width: 100%;
-    text-align: left;
+    height: 12rem; /* Set a fixed height to make the images consistent */
+    object-fit: contain; /* Make the image cover the container while maintaining aspect ratio */
+    border-radius: 0.25rem;
+    margin-bottom: 0.75rem;
 }
 
 #experience-section .experience-box h3 {
@@ -211,6 +228,21 @@ section h2::after {
     font-size: 1rem;
     font-weight: 300;
 }
+
+/* Stack experience boxes vertically on smaller screens */
+@media (max-width: 768px) {
+    .experience-scroll-container {
+        flex-direction: column;
+        align-items: center;
+        overflow-x: unset;
+    }
+
+    .experience-box {
+        flex: unset;
+        width: 90%;
+    }
+}
+
 
 /* Projects Section */
 #projects-section {
@@ -291,7 +323,7 @@ section h2::after {
 .project-box p {
     font-size: 1rem;
     font-weight: 300;
-    color: #494a4a;
+    color: #1a1c20;
 }
 
 /* Skills Section */
