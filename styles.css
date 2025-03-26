@@ -179,7 +179,6 @@ section h2::after {
     padding: 4rem 2rem; /* Add some padding for spacing */
 }
 
-
 #experience-section h2 {
     margin-bottom: 1rem;
     font-size: 2.75rem;
@@ -229,20 +228,19 @@ section h2::after {
     font-weight: 300;
 }
 
-/* Stack experience boxes vertically on smaller screens */
+/* Keep experience boxes in a horizontal layout on smaller screens */
 @media (max-width: 768px) {
     .experience-scroll-container {
-        flex-direction: column;
+        flex-direction: row; /* Keep horizontal scrolling */
         align-items: center;
-        overflow-x: unset;
+        overflow-x: auto; /* Ensure horizontal scrolling is still allowed */
     }
 
     .experience-box {
         flex: unset;
-        width: 90%;
+        width: 20rem; /* Keep the box width consistent */
     }
 }
-
 
 /* Projects Section */
 #projects-section {
