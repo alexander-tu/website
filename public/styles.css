@@ -188,20 +188,25 @@ section h2::after {
     margin-bottom: 2rem;
     font-size: 1.5rem;
     font-weight: 500;
-    /* text-decoration: underline; */
+    text-decoration: underline;
 }
 
-/* Removed centering styles for experience-scroll-container */
+.project-subsection {
+    width: 100%;
+    margin-bottom: 4rem; /* Add space between subsections */
+}
+
 .experience-scroll-container {
     display: flex;
+    justify-content: center; /* Center the child items horizontally */
     gap: 1.5rem;
     padding: 1rem;
     width: 100%;
     max-width: 1600px;
-    overflow-x: auto; /* Horizontal scrolling enabled */
+    overflow-x: auto;
+    margin: 0 auto;
 }
 
-/* Experience Box */
 .experience-box {
     flex: 0 0 16rem; /* Fixed width for the boxes */
     text-align: center;
@@ -219,7 +224,7 @@ section h2::after {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Experience Box Image */
+
 .experience-box img {
     width: 100%;
     height: 12rem; /* Set a fixed height to make the images consistent */
@@ -258,7 +263,6 @@ section h2::after {
         width: 20rem; /* Keep the box width consistent */
     }
 }
-
 
 /* Projects Section */
 #projects-section {
