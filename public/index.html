@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- The root element of the HTML document, with the language set to English -->
+    <head> <!-- The head element contains meta-information about the document -->
+        <meta charset="UTF-8"> <!-- Specifies the character encoding for the HTML document -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures the webpage is responsive and scales to the device's width -->
+        <title>Alexander Tu Portfolio</title> <!-- The title of the webpage, displayed in the browser tab -->
+        <link rel="stylesheet" href="styles.css"> <!-- Links to an external CSS file for styling the webpage -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Preconnects to the Google Fonts API to improve loading performance -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Preconnects to the Google Fonts static content server with cross-origin support -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&display=swap" rel="stylesheet"> <!-- Links to Google Fonts for custom fonts -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- Links to Font Awesome for icons -->
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" /> <!-- Links to Devicons for developer icons -->
+    </head>
+    <body> <!-- The body element contains the content of the HTML document -->
+        <header> <!-- The header element represents introductory content or a set of navigational links -->
+            <nav> <!-- The nav element represents a section of navigation links -->
+                <div class="left"> <!-- A div element with a class of 'left' for styling purposes -->
+                    <a href="http://alexandertu.me">Alexander Tu</a> <!-- A link to the about section -->
+                </div>
+                <div class="right"> <!-- A div element with a class of 'right' for styling purposes -->
+                    <a href="#about-section">About</a> <!-- A link to the about section -->
+                    <a href="#experience-section">Experience</a> <!-- A commented-out link to the experience section -->
+                    <a href="#projects-section">Projects</a> <!-- A link to the projects section -->
+                    <a href="#skills-section">Skills</a> <!-- A link to the skills section -->
+                    <a href="#leave-message-section">Leave a message!</a> <!-- A link to the leave a message section -->
+                </div>
+            </nav>
+        </header>
+        <section id="about-section"> <!-- A section element with an id of 'about-section' -->
+            <h2>Hello, I'm Alex!</h2> <!-- A heading element with a greeting message -->
+            <div class="headshot"> <!-- A div element with a class of 'headshot' for styling purposes -->
+                <img src="images/headshot.jpeg" alt="headshot"> <!-- An image element with a source and alternative text -->
+            </div>
+            <div class = "bio">
+                <p>
+                    Hi! I'm Alex, a recent graduate from the University of Houston who's extremely passionate about all things related to hardware engineering and software development.
+                    with a background in computer engineering and a minor in mathematics, I am well equiped with a technical base that matches my eagerness to learn and experiment! <br><br>
+                    Outside of my technical interests, I enjoy playing video games, watching shows, and exercising! I'm also a huge fan of basketball and tennis!
+                </p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/alexandertu/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i></a> <!-- A link to the LinkedIn profile -->
+                <a href="https://github.com/alexander-tu" target="_blank">
+                    <i class="fa-brands fa-github"></i></a> <!-- A link to the GitHub profile -->
+                <!-- a href="https://instagram.com/alexander.p.tu" target="_blank">
+                    <i class="fa-brands fa-instagram"></i></a> <-- A link to the Instagram profile -->
+                <!-- a href="https://www.youtube.com/@alexandertu" target="_blank">
+                    <i class="fa-brands fa-youtube"></i></a> <-- A link to the YouTube channel -->
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section id="experience-section">
+            <h2>Experience</h2>
+            <div class="experience-subsection">
+                <div class="experience-scroll-container">
+                    <div class="experience-box">
+                        <img src="images/kulr-logo.png" alt="KULR Techology">
+                        <h3>Software Engineering Intern</h3>
+                        <h4>KULR Technology</h4>
+                        <h5>Webster, Texas</h5>
+                        <h5>May 2024 - November 2024</h5>
+                        <p> As a software engineering intern at KULR Technology, I worked on a variety of projects that involved developing and maintaining software for the company's thermal runaway analysis systems. 
+                            I was responsible for developing software that interfaced with the company's hardware products, as well as developing software tools to help automate and streamline the company's internal processes. 
+                            Additionally, I was responsible for assisting with various testing and validation activities, as well as providing support to the company's engineering team operating the fractional thermal runaway calorimeter.
+                        </p>
+                    </div>
+                    <div class="experience-box">
+                        <img src="images/uh-logo.png" alt="University of Houston">
+                        <h3>Academic Support Assistant</h3>
+                        <h4>University of Houston</h4>
+                        <h5>Houston, Texas</h5>
+                        <h5>February 2024 - May 2024</h5>
+                        <p> As an academic support assistant at the University of Houston, I was responsible for providing academic support to students in the Cullen College of Engineering Electrical Engineering Laboratory. 
+                            I worked with students to help them understand difficult concepts and improve their understanding of lab equipment application. 
+                            I also assisted with the maintainance of lab equipment and facility upkeep regarding workstations.
+                        </p>
+                    </div>
+                </div>
+            
+        </section>
+        <div class="divider"></div>
+        <section id="projects-section"> <!-- A section element with an id of 'projects-section' -->
+            <h2>Projects</h2> <!-- A heading element with a title -->
+            <div class="project-subsection"> <!-- A div element with a class of 'project-subsection' -->
+                <div class="projects-scroll-container">
+                    <div class="project-box"> <!-- Add the 'project-box' class -->
+                        <img src="images/fpga-game.jpg" alt="FPGA Math Game">
+                        <h4>FPGA Mental Math Game</h4>
+                        <h5>Verilog, Testbenches, ModelSim Simulation</h5>
+                        <p>
+                            I developed a mental math game on an Intel / Altera FPGA board using Verilog, designing reusable modules to be integrated across the entire design.
+                            In order to test these modules' functions prior to usage in my project design, I create testbenches in order to simulate expected performance. 
+                            Over the course of a semester, I iteratively improved the game's functionality and features, adding a new feature weekly.
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Design Projects Subsection-->
+            <!-- div class="certifications-subsection">
+                <h3>Certifications</h3>
+                <div class="certifications-scroll-container">
+                    <a href="https://website.com/" target="_blank" class="certifications-box">
+                        <img src="images/picture." alt="Title">
+                        <h4>Title</h4>
+                        <h5><em>Subtitle</em></h5>
+                        <p>Designed a mold for research lap to reduce cell usage while maintaining tissue patch functionality.</p>
+                    </a>
+                
+                </div>
+            </div --> 
+        </section>
+        <div class="divider"></div>
+        <section id="skills-section">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <i class ="fa-brands fa-python"></i>
+                <i class ="fa-solid fa-code"></i>
+                <!-- i class="fa-brands fa-git-alt"></i -->
+                <i class="fa-brands fa-github-alt"></i>
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section id="leave-message-section">
+            <h2>Leave a Message!</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="form-status"></div> <!-- For confirmation -->
+        </section>
+    </body>
+    <footer>
+        <p>&copy; Alexander Tu. All Rights Reserved</p>
+    </footer>
+</html>
