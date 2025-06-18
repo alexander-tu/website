@@ -62,7 +62,7 @@
                         <h5>May 2024 - November 2024</h5>
                         <p> As a software engineering intern at KULR Technology, I worked on a variety of projects that involved developing and maintaining software for the company's thermal runaway analysis systems. 
                             I was responsible for developing software that interfaced with the company's hardware products, as well as developing software tools to help automate and streamline the company's internal processes. 
-                            Additionally, I was responsible for assisting with various testing and validation activities, as well as providing support to the company's engineering team.
+                            Additionally, I was responsible for assisting with various testing and validation activities, as well as providing support to the company's engineering team operating the fractional thermal runaway calorimeter.
                         </p>
                     </div>
                     <div class="experience-box">
@@ -85,15 +85,6 @@
             <div class="project-subsection"> <!-- A div element with a class of 'project-subsection' -->
                 <div class="projects-scroll-container">
                     <div class="project-box"> <!-- Add the 'project-box' class -->
-                        <img src="images/maze-robot.jpeg" alt="Maze Robot">
-                        <h4>Maze Traversing Robot</h4>
-                        <h5>Embedded C, RTOS, Microcontrollers</h5>
-                        <p>I designed and programmed a maze-traversing robot using a Tiva-C Launchpad, showcasing my expertise in embedded systems and Bluetooth communication. 
-                            By integrating Texas Instruments sensors and crafting precise control algorithms in C, I enabled efficient right-hand maze navigation - blending problem-solving with seamless hardware-software integration. 
-                            Leading weekly team meetings, I ensured consistent performance improvements of at least 10% per week, driving the project forward with focus and collaboration.
-                        </p>
-                    </div>
-                    <div class="project-box"> <!-- Add the 'project-box' class -->
                         <img src="images/fpga-game.jpg" alt="FPGA Math Game">
                         <h4>FPGA Mental Math Game</h4>
                         <h5>Verilog, Testbenches, ModelSim Simulation</h5>
@@ -103,14 +94,15 @@
                             Over the course of a semester, I iteratively improved the game's functionality and features, adding a new feature weekly.
                         </p>
                     </div>
+                    
                 </div>
             </div>
 
             <!-- Design Projects Subsection-->
-            <!-- div class="project-subsection">
-                <h3>Design</h3>
-                <div class="projects-scroll-container">
-                    <a href="https://website.com/" target="_blank" class="project-box">
+            <!-- div class="certifications-subsection">
+                <h3>Certifications</h3>
+                <div class="certifications-scroll-container">
+                    <a href="https://website.com/" target="_blank" class="certifications-box">
                         <img src="images/picture." alt="Title">
                         <h4>Title</h4>
                         <h5><em>Subtitle</em></h5>
@@ -133,12 +125,13 @@
         <div class="divider"></div>
         <section id="leave-message-section">
             <h2>Leave a Message!</h2>
-            <form action="submit.php" method="post">
-                <input type="text" name="name" placeholder="Name">
-                <input type="email" name="email" placeholder="Email">
-                <textarea name="message" placeholder="Message"></textarea>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Message" required></textarea>
                 <button type="submit">Submit</button>
             </form>
+            <div id="form-status"></div> <!-- For confirmation -->
         </section>
     </body>
     <footer>
